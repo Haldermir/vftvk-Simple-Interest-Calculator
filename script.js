@@ -23,7 +23,7 @@ function computeResults()
         let year = new Date().getFullYear()+parseInt(years);
         console.log("New year: " + year.toString());
         
-        let result_text = "If you deposit " + principal + "<br> at an interset rate of " + rate + "%<br>you will receive an amount of " + interest + "<br> in the year " + year;
+        let result_text = "If you deposit <mark>" + principal + "</mark><br> at an interset rate of <mark>" + rate + "%</mark><br>you will receive an amount of <mark>" + interest + "</mark><br> in the year <mark>" + year + "</mark>";
         document.getElementById("results").innerHTML = result_text;
     } else {
         alert("Please enter a positive number")
